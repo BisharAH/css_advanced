@@ -1,0 +1,397 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use Google Font for modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVIGATION BAR */
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 10;
+ 
+}
+
+header nav img {
+  width: 140px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  color: #ff00ff;
+}
+
+/* HERO SECTION */
+.home{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: url(images/Object.png) no-repeat center center/cover;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.home2{
+  position: relative;
+  text-align: justify;
+
+}
+.home .introduction {
+  position: absolute;
+  top: 250px;
+  right: 2rem;
+  z-index: 2;
+}
+
+.home .introduction span {
+  position: relative;
+
+  right: 2rem;
+  left: 6rem;
+
+  z-index: 2;
+}
+.home .introduction button {
+  position: relative;
+  top: 3rem;
+  left: 100px;
+
+  z-index: 2;
+}
+
+
+.home h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home span {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.home button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #ff00ff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home button:hover {
+  background: #cc00cc;
+}
+
+/* "Learn from the pros" Section */
+.home h2 {
+  color: #d8b4fe; /* Light purple */
+  margin-top: 40px;
+}
+
+/* PROFILES BELOW HERO */
+.home > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.home > div:last-child div {
+  text-align: center;
+}
+
+.home > div:last-child img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+
+
+.membership {
+  background-color: #071629;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership h2 {
+  color: #C271FF;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.membership > div {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+
+.membership > div img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.membership h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.membership p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.membership button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 15px 35px;
+  background: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.membership button:hover {
+  background: #a24ee6;
+}
+
+
+.faq {
+  background: white;
+  padding: 80px 20px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.faq > div {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.faq > div > div {
+  max-width: 500px;
+}
+
+.faq h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.faq div div {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+footer {
+  background: #071629;
+  color: white;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+footer img {
+  width: 120px;
+}
+
+footer div i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer div i:hover {
+  color: #C271FF;
+}
+
+footer p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* Testimonial section */
+.presenter {
+  background-color: #c271ff;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+.presenter img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.presenter blockquote {
+  font-style: italic;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.presenter h3 {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.presenter p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Tutorials section */
+.tutorials {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.tutorials h2 span,
+.tutorials h2 .highlight {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.tutorials > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tutorials > div > div {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.tutorials img {
+  width: 10%;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.tutorials h3 {
+  margin: 15px 15px 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.tutorials p {
+  margin: 0 15px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.tutorials h4 {
+  margin: 10px 15px 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tutorials .fa-star {
+  color: #c271ff;
+  margin: 0 1px;
+}
+
+.tutorials div > p:last-child {
+  margin: 10px 15px 20px;
+  color: #999;
+  font-size: 12px;
+}
